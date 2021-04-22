@@ -1,2 +1,2 @@
 # TestCafeDocker
-Let's create a custom docker image for TestCafe with dependencies.
+Custom testcafe docker image and docker-compose file.
