@@ -6,39 +6,4 @@ services:
         image: testdockerlalit/testcafe
         stdin_open: true
         tty: true
-        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo node testcafeapi/runner1.js --browser='chromium:headless --start-fullscreen' --env=live --allow-insecure-localhost"
-    testcafeB:
-        volumes:
-            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
-        image: testdockerlalit/testcafe
-        stdin_open: true
-        tty: true
-        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo node testcafeapi/runner2.js --browser='chromium:headless --start-fullscreen' --env=live --allow-insecure-localhost"
-    testcafeC:
-        volumes:
-            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
-        image: testdockerlalit/testcafe
-        stdin_open: true
-        tty: true
-        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo node testcafeapi/runner3.js --browser='chromium:headless --start-fullscreen' --env=live --allow-insecure-localhost"
-    testcafeD:
-        volumes:
-            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
-        image: testdockerlalit/testcafe
-        stdin_open: true
-        tty: true
-        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo node testcafeapi/runner4.js --browser='chromium:headless --start-fullscreen' --env=live --allow-insecure-localhost"
-    testcafeE:
-        volumes:
-            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
-        image: testdockerlalit/testcafe
-        stdin_open: true
-        tty: true
-        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo node testcafeapi/runner5.js --browser='chromium:headless --start-fullscreen' --env=live --allow-insecure-localhost"
-    testcafeF:
-        volumes:
-            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
-        image: testdockerlalit/testcafe
-        stdin_open: true
-        tty: true
-        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo node testcafeapi/runner6.js --browser='chromium:headless --start-fullscreen' --env=live --allow-insecure-localhost"
+        entrypoint: sh -c '${SCRIPT1}'

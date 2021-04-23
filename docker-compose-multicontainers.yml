@@ -1,0 +1,34 @@
+version: '3.3'
+services:
+    testcafeA:
+        volumes:
+            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
+        image: testdockerlalit/testcafe
+        shm_size: 1gb
+        stdin_open: true
+        tty: true
+        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo npm run Dock1:FF:headless"
+    testcafeB:
+        volumes:
+            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
+        image: testdockerlalit/testcafe
+        shm_size: 1gb
+        stdin_open: true
+        tty: true
+        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo npm run Dock2:FF:headless"
+    testcafeC:
+        volumes:
+            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
+        image: testdockerlalit/testcafe
+        shm_size: 1gb
+        stdin_open: true
+        tty: true
+        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo npm run Dock3:FF:headless"
+    testcafeD:
+        volumes:
+            - 'C:\Users\lalit.sharma\AppData\Roaming\npm\node_modules:/node_modules'
+        image: testdockerlalit/testcafe
+        shm_size: 1gb
+        stdin_open: true
+        tty: true
+        entrypoint: sh -c "cd TestCafeProjects && sudo git clone http://gitdeployer:gitdeployer@gitlab.infoedge.com/naukrigulfqa/NGJobsearchDesktopTestCafe.git -b multi && cd NGJobsearchDesktopTestCafe && sudo npm run Dock4:FF:headless"
